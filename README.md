@@ -22,9 +22,9 @@ I save the model ouputs and ground truth (target) in 3 json files:
 with the following format:
 ```json
 {
-    image_path: {
-        "target"      : [x1, y1, x2, y2, ..., x22, y22],
-        predictions : [x1, y1, x2, y2, ..., x22, y22]
+    "image_path": {
+        "target"      : "[x1, y1, x2, y2, ..., x22, y22]",
+        "predictions" : "[x1, y1, x2, y2, ..., x22, y22]"
     }
 }
 ```
@@ -39,9 +39,9 @@ with format:
 
 ```json
 {
-    image path: {
-        predicated direction      : 0, 1,
-        predictions               : [x1, y1, x2, y2, ..., x22, y22]
+    "image_path": {
+        "predicated direction"      : "0 if left else 1 if right",
+        "predictions"               : "[x1, y1, x2, y2, ..., x22, y22]"
     }
 }
 ```
@@ -59,11 +59,11 @@ With format:
 
 ```json
 {
-    image_path: {
-        target              : [x1, y1, x2, y2, ..., x22, y22],
-        predictions         : [x1, y1, x2, y2, ..., x22, y22, ...],
-        Number_landmarks    : n,
-        mask_path           : path for segmentation
+    "image_path": {
+        "target"            : "[x1, y1, x2, y2, ..., x22, y22]",
+        'predictions'       : "[x1, y1, x2, y2, ..., x22, y22, ...]",
+        "Number_landmarks"    : "n",
+        "mask_path"           : "path for segmentation"
     }
 }
 ```
@@ -76,11 +76,11 @@ The process is similar to the one above. There is an additional field that conta
 
 ```json
 {
-    image_path: {
-        predicted_direction        :  0 if left else 1 if right,
-        predictions                : [x1, y1, x2, y2, ..., x22, y22, ...],
-        Number_landmarks           : n,
-        mask_path                  : path for segmentation
+    "image_path": {
+        "predicted_direction"        :  "0 if left else 1 if right",
+        "predictions"                : "[x1, y1, x2, y2, ..., x22, y22, ...]",
+        "Number_landmarks"           : "n",
+        "mask_path"                  : "path for segmentation"
     }
 }
 ```
