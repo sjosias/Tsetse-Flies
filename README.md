@@ -61,7 +61,7 @@ With format:
 {
     "image_path": {
         "target"            : "[x1, y1, x2, y2, ..., x22, y22]",
-        'predictions'       : "[x1, y1, x2, y2, ..., x22, y22, ...]",
+        "predictions"       : "[x1, y1, x2, y2, ..., x22, y22, ...]",
         "Number_landmarks"    : "n",
         "mask_path"           : "path for segmentation"
     }
