@@ -23,7 +23,7 @@ with the following format:
 ```json
 {
     image_path: {
-        target      : [x1, y1, x2, y2, ..., x22, y22],
+        "target"      : [x1, y1, x2, y2, ..., x22, y22],
         predictions : [x1, y1, x2, y2, ..., x22, y22]
     }
 }
